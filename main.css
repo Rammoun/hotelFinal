@@ -1,0 +1,170 @@
+/*******Global Styles*********/
+@keyframes colors{
+	0% {color: black}
+	20% {color: green}
+	40% {color: deeppink}
+	60% {color: red}
+	80% {color: purple}
+	100% {color: black}
+}
+.logo{ align-self: center; margin-left: 1%;}
+.head-logo img{height: 170px; width: 500px;/*font-family: "Great Vibes"; font-size: 1.8em; font-weight: bold; letter-spacing: 5px; animation: colors 10s linear infinite ;*/}
+.footer-logo{font-family: "Great Vibes"; font-size: 1.5em; font-weight: bolder; letter-spacing: 5px; text-shadow: 2px 2px 2px orange, -2px -2px 2px deeppink;   }
+.final-logo{font-family: "Great Vibes"; font-size: 2.5em; font-weight: bolder; letter-spacing: 5px; text-shadow: 2px 2px 2px orange, -2px -2px 2px deeppink;}
+.fa-facebook-f{color: rgba(33,43,225,1.00); text-shadow: 1px 1px 3px black;}
+.fa-twitter{color: aqua; text-shadow: 1px 1px 3px black;}
+.fa-instagram{	
+	padding: 5px;
+ 	border-radius: 14px;
+  	color: #fff;
+  	background: #d6249f;
+  	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fa-youtube{color: red; text-shadow: 1px 1px 3px black;}
+.contact{ flex-basis: 95%;}
+.address,.EmailAddress,.PhoneNumber,.NewsLetter{
+	width:24%; height: 220px; background-color: rgba(193,184,184,0.57); text-align: center;}
+.newsltrtxt, #newsletter-sub{
+	width:80%; margin: 0 10%;
+}
+.contact-h{margin-bottom: 10% ;}
+.at-symbol{color: purple}
+/*******Home*******/
+.carousel-caption{background-color: rgba(0,0,0,0.7); border-radius: 8px; padding: 2%;}
+.carousel-caption h5{color: yellow;}
+/******Gallery*****/
+/*.holiday-option, .holiday-offer , .holiday-restaurant{
+	margin: 7% 0%;
+	text-align: center;
+	line-height: 40px;
+}
+.holiday-option p , .holiday-offer p , .holiday-restaurant p{
+	color: gray;
+}
+
+.container-sea , .container-spa , .container-pools {
+	position: relative;		
+}
+.text-sea , .text-spa , .text-pools {
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	color: white;
+}
+.container-sea:hover .text-sea ,.container-spa:hover .text-spa ,.container-pools:hover .text-pools{
+	opacity: 1;
+}
+.card:hover .image-sea , .card:hover .image-spa,.card:hover .image-pool{
+	opacity: 0.6;
+}
+hr {
+	width: 40%;
+	height: none;
+	border: none;
+	border-top: 1px dashed grey;
+}
+
+.card p , h5 {
+	color: rgb(58, 56, 56);
+	text-align: center;
+}
+.offer-body{background: radial-gradient(#f1efef, #fcfcfa);}
+.section-restaurant{margin-bottom: 7%;}
+/* galrie 2*//*
+img {
+
+	width: 50%;
+	height: 50%;
+	padding: 2% 0%;
+}
+.intro-pics { margin: 5% 0%; text-align: center;}
+/******Reservation*****/
+.holiday-option, .holiday-offer , .holiday-restaurant{margin: 7% 0%;text-align: center;line-height: 40px;}
+.holiday-option p , .holiday-offer p , .holiday-restaurant p{color: gray;}
+.container-sea:hover .text-sea ,.container-spa:hover .text-spa ,.container-pools:hover .text-pools{opacity: 1;}
+.card:hover .image-sea , .card:hover .image-spa,.card:hover .image-pool ,.card:hover .image-All-inclusive, .card:hover .image-wedding{opacity: 0.6;}
+.card-img-top /*img*/{width: 25.5rem;height: 15rem;}
+hr {width: 40%;height: none;border: none;border-top: 1px dashed grey;}
+.card p , h5 {color: rgb(58, 56, 56);text-align: center;}
+.offer-body{background: radial-gradient(#f1efef, #fcfcfa);}
+.section-restaurant{margin-bottom: 7%;}
+.container-sea , .container-spa, .container-pools,.container-All-inclusive ,.container-wedding{
+	position: relative; text-align: center;}
+.container-sea:after   {position:absolute; top:50%; left:50%; transform:translate(-50%,-10%);  color: white; width:100% ; font-size:30px; height: 100%; content: "Beach Holiday"; opacity: 0;}
+.container-spa:after  {position:absolute; top:50%; left:50%; transform:translate(-50%,-10%);  color: white; width:100% ; font-size:30px; height: 100%; content: "Spa Retreats"; opacity: 0;}
+.container-pools:after  {position:absolute; top:50%; left:50%; transform:translate(-50%,-10%);  color: white; width:100% ; font-size:30px; height: 100%; content: "Top Pools"; opacity: 0;}
+.container-All-inclusive:after{position:absolute; top:50%; left:50%; transform:translate(-50%,-10%);  color: white; width:100% ; font-size:30px; height: 100%; content: "All inclusive"; opacity: 0;}
+.container-wedding:after{position:absolute; top:50%; left:50%; transform:translate(-50%,-10%);  color: white; width:100% ; font-size:30px; height: 100%; content: "Beach wedding"; opacity: 0;}
+.container-sea:hover:after, .container-spa:hover:after, .container-pools:hover:after ,.container-All-inclusive:hover:after ,.container-wedding:hover:after {opacity:1;}
+.card {flex-basis: 25% !important; margin-bottom: 1% !important;}
+.second{align-self: center;}
+.reservation{
+	width: 20%;
+}
+/*.reservation input{width: 12% !important; text-align: center; border: solid;}*/
+.fa-plus{color: green;}
+.fa-minus{color: red;}
+.coll-span{
+	flex-basis: 25%;
+	font-size: 19px; color:rgba(33,78,221,1.00);
+}
+.coll-txt{
+	flex-basis: 55%;
+	display: flex; 
+	justify-content: flex-end; 
+	align-items: center; 	
+}
+.reservation-select{
+	width: 81%;
+}
+/*.coll-txt {border: solid; }*/
+.rooms-txt,.child-txt,.adults-txt {
+	width: 25%; 
+	margin: 0 8%; 
+	text-align: center; 
+	border: none; 
+	box-shadow: 0px 0px 3px 3px grey; 
+	cursor: default;
+}
+.rooms-plus{
+	
+}
+.rooms-minus{
+	
+}
+.card-footer button {
+	border: 2px solid rgba(255,255,255,0.00); background-color: #49642a; padding: 2% 6%; border-radius: 5px; color: #f4f1d5 !important; margin: 1% 0;
+}
+.card-footer button:hover{
+	border: 2px solid #f4f1d5; box-shadow: 0 0 3px 3px grey; transform: scale(1.1); background-color: #f4f1d5; color: rgba(65,16,131,1.00) !important; transition-duration: .3s;
+}
+#price{border: none; font-size: 2em; color: #411083;}
+.book-sub{background-color: #49642a; color: #f4f1d5;}
+.book-reset{background-color: #6d6552; color: #f4f1d5;}
+.show-more{border: solid 2px #49642a; padding: 5px; color: #411083; background-color: #f4f1d5; border-radius: 4px;}
+.show-more:hover{border: 2px solid #411083; transition-duration: .3s}
+/******payment*****/
+#payment-section{display: flex; justify-content: space-around;}
+.payment, .info-form{
+	border-left: dashed thick #411083;
+}
+.summary-div{color: #6d6552; }
+.summary-txt{
+	/*margin: 5%;*/ border: none; color: #411083;
+	font-size: 150%; font-weight: bold;
+}
+.cred{
+	flex-basis: 24%;
+}
+.cred img{width: 100%; height: 100%;}
+.cred:hover{transform: scale(1.1);}
+.pay-sub{background-color: #411083; color: #f4f1d5;}
+#xcards{text-align: right}
+.final-txt{ border: none; color: #411083;}
+#last-logo{
+	width: 50%; position: relative;
+	left: 25%;
+}
+#modify{color: #f4f1d5; background-color: #6d6552;}

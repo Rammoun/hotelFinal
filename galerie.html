@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Y &amp; R Hotel | Gallery</title>
+        <link rel="stylesheet" href="gal.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link rel="stylesheet" href="main.css">        
+<link href="favicon.ico" rel="icon">
+<!--<link href="datepicker.css" rel="stylesheet" type="text/css">-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+       <header>
+    	<nav class="navbar navbar-expand-lg d-flex navbar-light bg-light justify-content-between">
+        	<a class="navbar-brand head-logo" href="#"><img src="logo2.png" class="head-logo-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>            
+            <div class="collapse navbar-collapse col-4" id="navbarNav">
+            	<ul class="navbar-nav">
+                	<li class="nav-item">
+                		<a class="nav-link" href="index.html"><h4>Home</h4></a>
+                	</li>                	
+                	<li class="nav-item active">
+                    	<a class="nav-link" href="galerie.html"><h4>Gallery</h4></a>
+                	</li>
+                	<li class="nav-item">
+                    	<a class="nav-link" href="reservation.html"><h4>Reservation</h4></a>
+                	</li>
+                </ul>
+            </div>
+    	</nav>
+    </header>
+       <main>
+        <div class="intro-pics">
+            <h1>Photo Gallery</h1>
+            <hr>
+        </div>
+    <section class="hotel"> 
+        <h4>Hotel</h4>
+        <!-- Container for the image gallery -->
+     <div class="containerHotel">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="https://cdn.pixabay.com/photo/2014/02/09/05/41/maldives-262518_960_720.jpg" style="width:100% ">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=225513764be638b97f04b5ae0c53868e&auto=format&fit=crop&w=890&q=80" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="https://images.unsplash.com/photo-1505881402582-c5bc11054f91?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI2MzczfQ&s=309bbbed8da29c60693ed86d93428565&auto=format&fit=crop&w=890&q=80" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="https://cdn.pixabay.com/photo/2014/02/09/05/45/maldives-sea-262524_960_720.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="https://cdn.pixabay.com/photo/2017/02/20/19/35/ship-2083710_960_720.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="https://cdn.pixabay.com/photo/2014/02/07/04/07/maldives-260686_960_720.jpg" style="width:100%">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="rowHotel">
+          <div class="column">
+            <img class="demo cursor" src="https://cdn.pixabay.com/photo/2014/02/09/05/41/maldives-262518_960_720.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hotel">
+          </div>
+          <div class="column"> 
+            <img class="demo cursor" src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=225513764be638b97f04b5ae0c53868e&auto=format&fit=crop&w=890&q=80" style="width:100%" onclick="currentSlide(2)" alt="Hotel">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://images.unsplash.com/photo-1505881402582-c5bc11054f91?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI2MzczfQ&s=309bbbed8da29c60693ed86d93428565&auto=format&fit=crop&w=890&q=80" style="width:100%" onclick="currentSlide(3)" alt="Hotel">
+          </div>
+          <div class="column">
+            <img class="demo cursor"src="https://cdn.pixabay.com/photo/2014/02/09/05/45/maldives-sea-262524_960_720.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hotel">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://cdn.pixabay.com/photo/2017/02/20/19/35/ship-2083710_960_720.jpg" style="width:100%" onclick="currentSlide(5)" alt="Hotel">
+          </div> 
+          <div class="column">
+            <img class="demo cursor" src="https://cdn.pixabay.com/photo/2014/02/07/04/07/maldives-260686_960_720.jpg" style="width:100%" onclick="currentSlide(6)" alt="Hotel">
+          </div> 
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+
+
+    <section class="Villa">  
+        <h4>Over Water Villa</h4>
+            <!-- Container for the image gallery -->
+             <div class="containerVilla">
+      
+              <!-- Full-width images with number text -->
+              <div class="mySlidesVilla">
+                <div class="numbertextVilla">1 / 6</div>
+                  <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-villa-terrace.jpg#_ga=2.260719433.576546756.1541406696-1179321788.1541406696" style="width:100%">
+              </div>
+            
+              <div class="mySlidesVilla">
+                <div class="numbertextVilla">2 / 6</div>
+                  <img src="https://cdn.pixabay.com/photo/2018/07/29/10/01/maldives-3569755_960_720.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlidesVilla">
+                <div class="numbertextVilla">3 / 6</div>
+                  <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/sunset-beach-villa-bedroom-1.jpg#_ga=2.269247285.576546756.1541406696-1179321788.1541406696" style="width:100%">
+              </div>
+            
+              <div class="mySlidesVilla">
+                <div class="numbertextVilla">4 / 6</div>
+                  <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-pool-villa-2.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlidesVilla">
+                <div class="numbertextVilla">5 / 6</div>
+                  <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-pool-villa-terrace-2.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlidesVilla">
+                <div class="numbertextVilla">6 / 6</div>
+                  <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-pool-villa-terrace-3.jpg" style="width:100%">
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prevVilla" onclick="plusSlidesVilla(-1)">&#10094;</a>
+              <a class="nextVilla" onclick="plusSlidesVilla(1)">&#10095;</a>
+            
+              <!-- Image text -->
+              <div class="caption-containerVilla">
+                <p id="captionVilla"></p>
+              </div>
+            
+              <!-- Thumbnail images -->
+              <div class="rowVilla">
+                <div class="columnVilla">
+                  <img class="demoVilla cursorVilla" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-villa-terrace.jpg#_ga=2.260719433.576546756.1541406696-1179321788.1541406696" style="width:100%" onclick="currentSlideVilla(1)" alt="Over Water Villa">
+                </div>
+                <div class="columnVilla"> 
+                  <img class="demoVilla cursorVilla" src="https://cdn.pixabay.com/photo/2018/07/29/10/01/maldives-3569755_960_720.jpg" style="width:100%" onclick="currentSlideVilla(2)" alt="Over Water Villa ">
+                </div>
+                <div class="columnVilla">
+                  <img class="demoVilla cursorVilla" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/sunset-beach-villa-bedroom-1.jpg#_ga=2.269247285.576546756.1541406696-1179321788.1541406696" style="width:100%" onclick="currentSlideVilla(3)" alt="Over Water Villa">
+                </div>
+                <div class="columnVilla">
+                  <img class= "demoVilla cursorVilla"src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-pool-villa-2.jpg" style="width:100%" onclick="currentSlideVilla(4)" alt="Over Water Pool Villa">
+                </div>
+                <div class="columnVilla">
+                  <img class="demoVilla cursorVilla" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-pool-villa-terrace-2.jpg" style="width:100%" onclick="currentSlideVilla(5)" alt="Over Water Pool Villa">
+                </div> 
+                <div class="columnVilla">
+                  <img class="demoVilla cursorVilla" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-pool-villa-terrace-3.jpg" style="width:100%" onclick="currentSlideVilla(6)" alt="Over Water Pool Villa">
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+
+          <section class="Spa">  
+              <h4>Spa</h4>
+                <!-- Container for the image gallery -->
+                 <div class="containerSpa">
+          
+                  <!-- Full-width images with number text -->
+                  <div class="mySlidesSpa">
+                    <div class="numbertextSpa">1 / 6</div>
+                      <img src="https://exp.cdn-hotels.com/hotels/29000000/28860000/28859000/28858949/22b0eca5_z.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesSpa">
+                    <div class="numbertextSpa">2 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/breeze-spa-01.jpg#_ga=2.38020711.576546756.1541406696-1179321788.1541406696" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesSpa">
+                    <div class="numbertextSpa">3 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/breeze-spa-08.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesSpa">
+                    <div class="numbertextSpa">4 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/breeze-spa-02.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesSpa">
+                    <div class="numbertextSpa">5 / 6</div>
+                      <img src="https://cdn.kiwicollection.com/media/property/PR008439/xl/008439-02-ewow-away-spa.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesSpa">
+                    <div class="numbertextSpa">6 / 6</div>
+                      <img src="http://baligo.co/wp-content/uploads/2014/12/spa2.jpg" style="width:100%">
+                  </div>
+                
+                  <!-- Next and previous buttons -->
+                  <a class="prevSpa" onclick="plusSlidesSpa(-1)">&#10094;</a>
+                  <a class="nextSpa" onclick="plusSlidesSpa(1)">&#10095;</a>
+                
+                  <!-- Image text -->
+                  <div class="caption-containerSpa">
+                    <p id="captionSpa"></p>
+                  </div>
+                
+                  <!-- Thumbnail images -->
+                  <div class="rowSpa">
+                    <div class="columnSpa">
+                      <img class="demoSpa cursorSpa" src="https://exp.cdn-hotels.com/hotels/29000000/28860000/28859000/28858949/22b0eca5_z.jpg" style="width:100%" onclick="currentSlideSpa(1)" alt="Spa">
+                    </div>
+                    <div class="columnSpa"> 
+                      <img class="demoSpa cursorSpa" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/breeze-spa-01.jpg#_ga=2.38020711.576546756.1541406696-1179321788.1541406696" style="width:100%" onclick="currentSlideSpa(2)" alt="Spa">
+                    </div>
+                    <div class="columnSpa">
+                      <img class="demoSpa cursorSpa" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/breeze-spa-08.jpg" style="width:100%" onclick="currentSlideSpa(3)" alt="Spa">
+                    </div>
+                    <div class="columnSpa">
+                      <img class= "demoSpa cursorSpa"src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/breeze-spa-02.jpg" style="width:100%" onclick="currentSlideSpa(4)" alt="Spa">
+                    </div>
+                    <div class="columnSpa">
+                      <img class="demoSpa cursorSpa" src="https://cdn.kiwicollection.com/media/property/PR008439/xl/008439-02-ewow-away-spa.jpg" style="width:100%" onclick="currentSlideSpa(5)" alt="Spa">
+                    </div> 
+                    <div class="columnSpa">
+                      <img class="demoSpa cursorSpa" src="http://baligo.co/wp-content/uploads/2014/12/spa2.jpg" style="width:100%" onclick="currentSlideSpa(6)" alt="Spa">
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+
+
+
+
+
+
+
+
+              <section class="Sport"> 
+                  <h4>Water Sport</h4> 
+                    <!-- Container for the image gallery -->
+                     <div class="containerSport">
+              
+                      <!-- Full-width images with number text -->
+                      <div class="mySlidesSport">
+                        <div class="numbertextSport">1 / 6</div>
+                          <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-kayaking.jpg#_ga=2.105612615.576546756.1541406696-1179321788.1541406696" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlidesSport">
+                        <div class="numbertextSport">2 / 6</div>
+                          <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-sailing-kayaking.jpg" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlidesSport">
+                        <div class="numbertextSport">3 / 6</div>
+                          <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-scuba-diving.jpg" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlidesSport">
+                        <div class="numbertextSpa">4 / 6</div>
+                          <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/underwater-scuba-diving.jpg" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlidesSport">
+                        <div class="numbertextSpa">5 / 6</div>
+                          <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-windsurfing.jpg" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlidesSport">
+                        <div class="numbertextSport">6 / 6</div>
+                          <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-jet-skiing.jpg" style="width:100%">
+                      </div>
+                    
+                      <!-- Next and previous buttons -->
+                      <a class="prevSport" onclick="plusSlidesSport(-1)">&#10094;</a>
+                      <a class="nextSport" onclick="plusSlidesSport(1)">&#10095;</a>
+                    
+                      <!-- Image text -->
+                      <div class="caption-containerSport">
+                        <p id="captionSport"></p>
+                      </div>
+                    
+                      <!-- Thumbnail images -->
+                      <div class="rowSport">
+                        <div class="columnSport">
+                          <img class="demoSport cursorSport" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-kayaking.jpg#_ga=2.105612615.576546756.1541406696-1179321788.1541406696" style="width:100%" onclick="currentSlideSport(1)" alt="Water Sport">
+                        </div>
+                        <div class="columnSport"> 
+                          <img class="demoSport cursorSport" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-sailing-kayaking.jpg" style="width:100%" onclick="currentSlideSport(2)" alt="Water Sport">
+                        </div>
+                        <div class="columnSport">
+                          <img class="demoSport cursorSport" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-scuba-diving.jpg" style="width:100%" onclick="currentSlideSport(3)" alt="UnderWater Sport">
+                        </div>
+                        <div class="columnSport">
+                          <img class= "demoSport cursorSport"src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/underwater-scuba-diving.jpg" style="width:100%" onclick="currentSlideSport(4)" alt="UnderWater Sport">
+                        </div>
+                        <div class="columnSport">
+                          <img class="demoSport cursorSport" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-windsurfing.jpg" style="width:100%" onclick="currentSlideSport(5)" alt="Water Sport">
+                        </div> 
+                        <div class="columnSport">
+                          <img class="demoSport cursorSport" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/water-sports-jet-skiing.jpg" style="width:100%" onclick="currentSlideSport(6)" alt="Water Sport">
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+
+
+
+
+
+
+
+
+
+
+                  
+        <section class="Bar">
+            <h4>Bar</h4>  
+                <!-- Container for the image gallery -->
+                 <div class="containerBar">
+          
+                  <!-- Full-width images with number text -->
+                  <div class="mySlidesBar">
+                    <div class="numbertextBar">1 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/ember-grill-1.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesBar">
+                    <div class="numbertextBar">2 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/thari-bar-6.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesBar">
+                    <div class="numbertextBar">3 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/thari-bar-2.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesBar">
+                    <div class="numbertextBar">4 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/ember-grill-4.jpg#_ga=2.4458871.576546756.1541406696-1179321788.1541406696" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesBar">
+                    <div class="numbertextBar">5 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/ember-grill-3.jpg#_ga=2.268640821.576546756.1541406696-1179321788.1541406696" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesBar">
+                    <div class="numbertextBar">6 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/thari-bar-1.jpg" style="width:100%">
+                  </div>
+                
+                  <!-- Next and previous buttons -->
+                  <a class="prevBar" onclick="plusSlidesBar(-1)">&#10094;</a>
+                  <a class="nextBar" onclick="plusSlidesBar(1)">&#10095;</a>
+                
+                  <!-- Image text -->
+                  <div class="caption-containerBar">
+                    <p id="captionBar"></p>
+                  </div>
+                
+                  <!-- Thumbnail images -->
+                  <div class="rowBar">
+                    <div class="columnBar">
+                      <img class="demoBar cursorBar" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/ember-grill-1.jpg" style="width:100%" onclick="currentSlideBar(1)" alt="Bar">
+                    </div>
+                    <div class="columnBar"> 
+                      <img class="demoBar cursorSBar" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/thari-bar-6.jpg" style="width:100%" onclick="currentSlideBar(2)" alt="Bar">
+                    </div>
+                    <div class="columnBar">
+                      <img class="demoBar cursorBar" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/thari-bar-2.jpg" style="width:100%" onclick="currentSlideBar(3)" alt="Bar">
+                    </div>
+                    <div class="columnBar">
+                      <img class= "demoBar cursorBar"src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/ember-grill-4.jpg#_ga=2.4458871.576546756.1541406696-1179321788.1541406696" style="width:100%" onclick="currentSlideBar(4)" alt="Bar">
+                    </div>
+                    <div class="columnBar">
+                      <img class="demoBar cursorBar" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/ember-grill-3.jpg#_ga=2.268640821.576546756.1541406696-1179321788.1541406696" style="width:100%" onclick="currentSlideBar(5)" alt="Bar">
+                    </div> 
+                    <div class="columnBar">
+                      <img class="demoBar cursorBar" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/thari-bar-1.jpg" style="width:100%" onclick="currentSlideBar(6)" alt="Bar">
+                    </div>
+                  </div>
+                </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="Food"> 
+            <h4>Food</h4> 
+                <!-- Container for the image gallery -->
+                 <div class="containerFood">
+          
+                  <!-- Full-width images with number text -->
+                  <div class="mySlidesFood">
+                    <div class="numbertextFood">1 / 6</div>
+                      <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-villa-breakfast-1.jpg#_ga=2.37438948.576546756.1541406696-1179321788.1541406696" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesFood">
+                    <div class="numbertextFood">2 / 6</div>
+                      <img src="https://cdn.pixabay.com/photo/2016/11/29/06/20/adult-1867769_960_720.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesFood">
+                    <div class="numbertextFood">3 / 6</div>
+                      <img src="https://cdn.pixabay.com/photo/2015/09/02/12/43/meal-918638_960_720.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesFood">
+                    <div class="numbertextFood">4 / 6</div>
+                      <img src="https://cdn.pixabay.com/photo/2015/09/02/12/43/meal-918639_960_720.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesFood">
+                    <div class="numbertextFood">5 / 6</div>
+                      <img src="https://cdn.pixabay.com/photo/2016/11/29/09/00/abundance-1868573_960_720.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlidesFood">
+                    <div class="numbertextFood">6 / 6</div>
+                      <img src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_960_720.jpg" style="width:100%">
+                  </div>
+                
+                  <!-- Next and previous buttons -->
+                  <a class="prevFood" onclick="plusSlidesBar(-1)">&#10094;</a>
+                  <a class="nextFood" onclick="plusSlidesBar(1)">&#10095;</a>
+                
+                  <!-- Image text -->
+                  <div class="caption-containerFood">
+                    <p id="captionFood"></p>
+                  </div>
+                
+                  <!-- Thumbnail images -->
+                  <div class="rowFood">
+                    <div class="columnFood">
+                      <img class="demoFood cursorFood" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/overwater-villa-breakfast-1.jpg#_ga=2.37438948.576546756.1541406696-1179321788.1541406696" style="width:100%" onclick="currentSlideFood(1)" alt="Breakfast">
+                    </div>
+                    <div class="columnFood"> 
+                      <img class="demoFood cursorSFood" src="https://cdn.pixabay.com/photo/2016/11/29/06/20/adult-1867769_960_720.jpg" style="width:100%" onclick="currentSlideFood(2)" alt="Breakfast">
+                    </div>
+                    <div class="columnFood">
+                      <img class="demoFood cursorFood" src="https://cdn.pixabay.com/photo/2015/09/02/12/43/meal-918638_960_720.jpg" style="width:100%" onclick="currentSlideFood(3)" alt="Food">
+                    </div>
+                    <div class="columnFood">
+                      <img class= "demoFood cursorFood"src="https://cdn.pixabay.com/photo/2015/09/02/12/43/meal-918639_960_720.jpg" style="width:100%" onclick="currentSlideFood(4)" alt="Food">
+                    </div>
+                    <div class="columnFood">
+                      <img class="demoFood cursorFood" src="https://cdn.pixabay.com/photo/2016/11/29/09/00/abundance-1868573_960_720.jpg" style="width:100%" onclick="currentSlideFood(5)" alt="Choclat">
+                    </div> 
+                    <div class="columnFood">
+                      <img class="demoFood cursorFood" src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_960_720.jpg" style="width:100%" onclick="currentSlideFood(6)" alt="healthy food">
+                    </div>
+                  </div>
+                </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="Fit"> 
+        <h4>Fitness Center</h4> 
+            <!-- Container for the image gallery -->
+             <div class="containerFit">
+      
+              <!-- Full-width images with number text -->
+              <div class="mySlidesFit">
+                <div class="numbertextFit">1 / 6</div>
+                  <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/fit-centre-1.jpg#_ga=2.93094617.576546756.1541406696-1179321788.1541406696" style="width:100%">
+              </div>
+            
+              <div class="mySlidesFit">
+                <div class="numbertextFit">2 / 6</div>
+                  <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/fit-centre-2.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlidesFit">
+                <div class="numbertextFit">3 / 6</div>
+                  <img src="http://prod.bravebooking.net/clients/SV76920/media/photos/hotellocal/274897/Movenpick_Gammarth_33.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlidesFit">
+                <div class="numbertextFit">4 / 6</div>
+                  <img src="https://cdn.pixabay.com/photo/2017/01/08/10/41/sports-1962574_960_720.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlidesFit">
+                <div class="numbertextFit">5 / 6</div>
+                  <img src="https://cdn.pixabay.com/photo/2016/05/14/03/24/girl-in-the-gym-1391369_960_720.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlidesFit">
+                <div class="numbertextFit">6 / 6</div>
+                  <img src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/fit-centre-3.jpg" style="width:100%">
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prevFit" onclick="plusSlidesFit(-1)">&#10094;</a>
+              <a class="nextFit" onclick="plusSlidesFit(1)">&#10095;</a>
+            
+              <!-- Image text -->
+              <div class="caption-containerFit">
+                <p id="captionFit"></p>
+              </div>
+            
+              <!-- Thumbnail images -->
+              <div class="rowFit">
+                <div class="columnFit">
+                  <img class="demoFit cursorFit" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/fit-centre-1.jpg#_ga=2.93094617.576546756.1541406696-1179321788.1541406696" style="width:100%" onclick="currentSlideFit(1)" alt="Fitness Center">
+                </div>
+                <div class="columnFit"> 
+                  <img class="demoFit cursorFit" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/fit-centre-2.jpg" style="width:100%" onclick="currentSlideFit(2)" alt="Fitness Center">
+                </div>
+                <div class="columnFit">
+                  <img class="demoFit cursorFit" src="http://prod.bravebooking.net/clients/SV76920/media/photos/hotellocal/274897/Movenpick_Gammarth_33.jpg" style="width:100%" onclick="currentSlideFit(3)" alt="Fitness Center">
+                </div>
+                <div class="columnFit">
+                  <img class="demoFit cursorFit" src="https://cdn.pixabay.com/photo/2017/01/08/10/41/sports-1962574_960_720.jpg" style="width:100%" onclick="currentSlideFit(4)" alt="Fitness Center">
+                </div>
+                <div class="columnFit">
+                  <img class="demoFit cursorFit" src="https://cdn.pixabay.com/photo/2016/05/14/03/24/girl-in-the-gym-1391369_960_720.jpg" style="width:100%" onclick="currentSlideFit(5)" alt="Fitness Center">
+                </div> 
+                <div class="columnFit">
+                  <img class="demoFit cursorFit" src="https://cloudstorage.amari.com/havodda-maldives/hotel-photos/fit-centre-3.jpg" style="width:100%" onclick="currentSlideFit(6)" alt="Fitness Center">
+                </div>
+              </div>
+            </div>
+          </section>
+		</main>
+<footer class="mt-3">
+    	<div class="d-flex justify-content-around" id="contacts">
+            <div class="logo">
+                <a class="footer-logo" href="#">Y &amp; R Hotel:<br>Paradise On Earth</a>
+            </div>
+            <div class="contact d-flex justify-content-around flex-column flex-md-row">
+                <div class="address">
+					<h3 class="text-success"><i class="fa fa-envelope mt-3"></i></h3>
+                    <h3 class="contact-h">Address</h3>
+                    <h6>South Male ' Atoll, Republic Of Maldives, South Male ' Atoll 20105, Maldives</h6>
+                </div>
+                <div class="EmailAddress">
+                   <h3 class="at-symbol"><i class="fa fa-at mt-3"></i></h3>
+                    <h3 class="contact-h">Email Address</h3>
+                    <h6><a href="mailto:contact@yrhotel.com">contact@yrhotel.com</a></h6>
+                </div>
+                <div class="PhoneNumber">
+                   <h3 class="text-danger"><i class="fa fa-phone mt-3"></i></h3>
+                    <h3 class="contact-h">Phone Number</h3>
+                    <h6>+960 354 8888</h6>
+                </div>
+                <div class="NewsLetter d-flex flex-column ">
+                   <h3 class="text-info"><i class="fa fa-info mt-3"></i></h3>
+                    <h3 class="contact-h">Newsletter</h3>
+                    <div class="input-group newsltrtxt">
+                    	<div class="input-group-prepend">
+                    		<span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    	</div>
+                    	<input type="text" class="form-control" id="newsletter-input" placeholder="Email address" aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                    <div class="input-group mt-2">
+                    	<button class="form-control btn btn-outline-success" id="newsletter-sub"><i class="fa fa-check mr-2"></i>Subscribe</button>
+                    </div>
+                </div>
+                </div>
+            </div> 
+            <div id="alert"></div>           
+            <hr>
+            <div class="d-flex justify-content-center my-5" id="social">
+                <a href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-f mr-5"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-3x fa-twitter mr-5 "></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-3x fa-instagram mr-5"></i></a>
+                <a href="https://www.youtube.com"><i class="fab fa-3x fa-youtube"></i></a>
+            </div>
+        </footer>
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    
+        <script src="gal.js"></script>
+		<script src="main.js"></script>
+    </body>
+</html>
